@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabeh Shaikh - Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" />
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-text">
+                <p>Front End Developer</p>
+                <h1>Hi, I am <span> Sabeh </span> <br> Shaikh From Pakistan</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------about------- -->
+
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/mypic.jfif" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a dedicated Front-End Developer, driven by the passion to create user-centric and visually
+                        captivating websites. My core skills include HTML, CSS, and JavaScript, with a strong focus on
+                        enhancing user experiences. Currently, I'm mastering React JS for dynamic and interactive
+                        interfaces. I'm also actively expanding my expertise in full-stack development, exploring
+                        Node.js to build efficient web applications. Committed to pushing the boundaries of web
+                        development for outstanding digital experiences.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br> Web/App Development</li>
+                            <li><span>App Development</span><br>Building Android/iOs apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web Developer Intern</span> <br> Saylani Mass IT Training <span>(2023 -
+                                    Present)</span></li>
+                            <li><span>Remote Web/App Developer Intern</span> <br> CodeSoft <span>(Sept 20 - Oct 20,
+                                    2023)</span></li>
+                            <li><span>Remote Web Developer Intern</span> <br> TechnoHacks <span>(Oct 1 - Oct 30,
+                                    2023)</span></li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Federal Urdu University of Arts, Sciences & Technology</span><br>Bachelor of
+                                Computer Science (BSCS) <span>(2023 - Present)</span></li>
+                            <li><span>Saylani Mass IT Training</span><br>MERN Stack Web Development <span>(2022 -
+                                    Present)</span></li>
+                            <li><span>Fazaia Degree College Faisal</span><br>Pre-Engineering <span>(2020 - 2022)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
