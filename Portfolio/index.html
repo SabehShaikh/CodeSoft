@@ -7,22 +7,24 @@
     <title>Sabeh Shaikh - Web Developer</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/dfa522182d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
 
-    <div class="header">
+    <div class="header" id="header">
         <div class="container">
             <nav>
-                <img src="images/logo.png" class="logo" />
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <img src="images/sabe_shaikh-removebg-preview.png" height="85" class="logo" />
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
                 </ul>
-                <i class="fa-solid fa-bars"></i>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
             </nav>
 
             <div class="header-text">
@@ -34,11 +36,11 @@
 
     <!-- --------about------- -->
 
-    <div class="about">
+    <div class="about" id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/mypic.jfif" alt="">
+                    <img src="images/mypic.jpg" alt="">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
@@ -93,7 +95,7 @@
 
     <!----------- services --------------->
 
-    <div class="services">
+    <div class="services" id="services">
         <div class="container">
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
@@ -102,21 +104,20 @@
                     <h2>Web Design</h2>
                     <p>Creating visually stunning and functional websites is my passion. I specialize in crafting
                         engaging web designs that captivate users and provide an exceptional online experience.</p>
-                    <a href="#">Learn More</a>
+
                 </div>
                 <div>
                     <i class="fa-solid fa-crop-simple"></i>
                     <h2>UI/UX Design</h2>
                     <p>User-centered design is at the heart of my work. I focus on optimizing user experiences through
                         intuitive interfaces, ensuring users can easily navigate and enjoy your website.</p>
-                    <a href="#">Learn More</a>
+
                 </div>
                 <div>
                     <i class="fa-solid fa-laptop"></i>
                     <h2>Responsive Web Design</h2>
                     <p>I specialize in creating websites that adapt seamlessly to various devices. Whether on a desktop,
                         tablet, or smartphone, your site will provide a consistent and user-friendly experience.</p>
-                    <a href="#">Learn More</a>
                 </div>
             </div>
         </div>
@@ -125,7 +126,7 @@
 
     <!----------------- Portfolio ------------->
 
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
         <div class="container">
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
@@ -163,15 +164,15 @@
                     </div>
                 </div>
             </div>
-
-            <a href="#" class="btn">See More</a>
+<!-- 
+            <a href="#" class="btn">See More</a> -->
         </div>
     </div>
 
 
     <!-------- Contact ---------->
 
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
@@ -180,18 +181,21 @@
                     <div class="social-icons">
                         <a href="https://www.facebook.com/Sabeh420/"><i class="fa-brands fa-facebook"></i></a>
                         <a href="https://twitter.com/shaikh_sabeh"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="www.linkedin.com/in/sabeh-shaikh"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/sabeh-shaikh-016623245/"><i
+                                class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/SabehShaikh"><i class="fa-brands fa-github"></i></a>
                     </div>
                     <a href="images/Sabeh Shaikh Resume.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Enter Your Name" required>
                         <input type="email" name="Email" placeholder="Enter Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
+
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
