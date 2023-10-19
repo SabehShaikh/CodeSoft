@@ -1,0 +1,191 @@
+@font-face {
+    font-family: "my-font";
+    src: url(fonts/Ubuntu-Regular.ttf);
+}
+
+* {
+    font-family: "my-font";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.login-container {
+    height: 100vh;
+}
+
+/* Button Styles */
+.my-btn, .theme-btn, .theme-btn-a {
+    background: linear-gradient(45deg, #FFC230, #FF7C00);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.my-btn:hover, .theme-btn:hover, .theme-btn-a:hover {
+    background: linear-gradient(45deg, #FF7C00, #FFC230);
+    
+}
+
+/* Header Styles */
+.my-header {
+    background: linear-gradient(45deg, #FFC230, #FF7C00);
+    color: #fff;
+}
+
+.my-header .navbar-brand {
+    margin-bottom: 5px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Card Styles */
+.my-card {
+    height: 100vh;
+    background: linear-gradient(45deg, #FFC230, #FF7C00);
+    color: #fff;
+    cursor: pointer;
+}
+
+.my-card > div > h4 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.my-card > div > span {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Product Price Styles */
+.product-price {
+    color: #FF7C00;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.del-price {
+    color: grey;
+    font-weight: normal;
+}
+
+/* Sale Badge Styles */
+.sale-badge {
+    background: #FF7C00;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    font-size: 18px;
+}
+
+/* Section Heading Styles */
+.section-heading {
+    display: flex;
+    align-items: center;
+}
+
+.section-heading > div {
+    flex: 1;
+}
+
+.section-heading > h3 {
+    flex: 1;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: #000;
+}
+
+/* Navbar Styles */
+.navbar-nav .nav-item {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.nav-item > a {
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav-item > a:hover {
+    background-color: white;
+    color: black
+}
+
+/* Footer Styles */
+.footer {
+    background: linear-gradient(45deg, #FFC230, #FF7C00);
+    color: #fff;
+    padding: 50px 0px;
+}
+
+.social-icons > i {
+    font-size: 30px;
+    margin-top: 20px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.footer-links > h4 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.footer-links > ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links > ul > li {
+    line-height: 30px;
+}
+
+.footer-links > ul > li > a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links > ul > li > a:hover {
+    color: #FF7C00;
+}
+
+.footer-address > h4 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.footer-links {
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    padding: 0 30px;
+}
+
+/* Copyright Styles */
+.copyright {
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+}
